@@ -1,14 +1,16 @@
 <style>
   
   :root {
-    --skin-color: #f6b49a;
-    --skin-border-color: #984922;
+    --skin-color: #f7b39c;
+    --skin-border-color: #8f4520;
    	--eye-color: #181c63;
     --sphere-color2: #faa7a8;
     --hair: #d2221d;
     --orange-shirt: #f6723b;
     --white-shirt: #fef0d6;
     --freckle: #99543b;
+    --white: #FCFCFC;
+    --black: #000000;
 
   }
   
@@ -18,18 +20,74 @@
     justify-content: center;
   }
 
-  .triangle {
+  
+	.head-shape {
     width: 0;
     height: 0;
-    border-left: 100px solid var(--skin-color);
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border: 3px solid var(--skin-border-color);
-    border-radius: 50%;
-    transform: rotate(12deg);
+    border-top: 120px solid transparent;
+    border-bottom: 120px solid transparent;
+    border-left: 180px solid var(--skin-color);
+    transform: rotate(100deg) translateX(100px);
+    border-radius: 4%; /*solid var(--skin-border-color);*/
 	}
+  
+  .freckle1 {
+		width: 1px solid var(--freckle);
+    height: 1px;
+    border: 3px solid var(--freckle);
+    border-radius: 100%;
+    transform: translate(-185px,125px);
+      
+  }
+    
+  .freckle2 {
+    width: 1px solid var(--freckle);
+    height: 1px;
+    border: 3px solid var(--freckle);
+    border-radius: 100%;
+    transform: translate(-185px,140px);
 
+  }
+  
+   .freckle3 {
+    width: 1px solid var(--freckle);
+    height: 1px;
+    border: 3px solid var(--freckle);
+    border-radius: 100%;
+    transform: translate(-185px,125px);
+
+  }
+  
+  .eye1 {
+    height: 50px;
+    width: 60px;
+    background-color: solid var(--white);
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    transform: translate(-165px, 100px);
+
+
+  }
+  
+  .eye2 {
+    height: 50px;
+    width: 60px;
+    background-color: solid var(--white);
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    transform: translate(-190px, 105px);
+
+
+  }
+  
+    
   
 </style>
 
-<div class="triangle"></div>
+
+<div class="freckle1"></div>
+<div class="freckle2"></div>
+<div class="freckle3"></div>
+<div class="eye1"></div>
+<div class="eye2"></div>
+<div class="head-shape"></div>
